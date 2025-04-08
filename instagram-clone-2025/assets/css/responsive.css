@@ -1,0 +1,349 @@
+@media (max-width:1440px){
+    .msg-sidebar{
+        width: 30%;
+    }
+}
+@media (max-width:1342px) {
+    .titles{
+        display: none;
+    }
+    .sidebar{
+        width: 46px;
+    }
+    .sidebar li{
+        padding: 12px;
+    }
+    .logo-1{
+        display: none;
+    }
+    .logo-2{
+        display: flex;
+    }
+    .logo-2 img{
+        display: block; 
+    }
+    .explore-container{
+        margin-left: 0;
+    }
+    .container{
+        margin-left: 0;
+    }
+}
+@media (max-width:1159px){
+    .sidebar2{
+        display: none;
+    }
+}
+@media (max-width:1118px){
+    .explore-container{
+        margin-left:80px ;
+    }
+}
+@media (max-width: 1024px) {
+    .explore-container {
+        max-width: 800px;
+        margin:40px auto; /* Center it properly */
+    }
+    .msg-sidebar{
+        width: 50%;
+    }
+}
+@media (max-width:944px){
+    .explore-container{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px){
+    .explore-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .msg-item-info{
+        display: none;
+    }
+    .msg-profile-info h3{
+        display: none;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .msg-profile img{
+        display: none;
+
+    }
+    .msg-p{
+        display: none;
+    }
+    .msg-header{
+        display: none;
+    }
+    .msg-sidebar{
+        width: 12%;
+    }
+    .msg-list {
+        height: 100vh;
+        align-items: center;
+        margin-right: 0;
+    }
+    .msg-unread{
+        display: none;
+    }
+
+}
+@media (max-width: 756px){
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .msg-item img{
+        margin-right: 0;
+    }
+
+    /* Hide the sidebar */
+    .sidebar {
+        display: none;
+    }
+    .msg-sidebar{
+        margin-left: 0;
+        width: 104px;
+    }
+    .msg-unread{
+        display: none;
+    }
+    .msg-list{
+        align-items: center;
+    }
+    .msg-profile {
+        padding: 12px;
+        
+        align-items: center;
+        
+        /* align-items: center; */
+        
+        /* margin-bottom: 30px; */
+        margin-top: 55px;
+    }
+
+    /* Top Navigation Bar (Fixed like Instagram) */
+    .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        padding: 10px 16px;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 95%;
+        background: rgba(0, 0, 0, 0.9); /* Dark Transparent */
+        z-index: 1000;
+        border-bottom: 1px solid #333;
+    }
+
+    /* Centering Instagram Logo */
+    .nav-top .logo img {
+        width: 110px;
+        height: 32px;
+    }
+
+    /* Right-side top icons (Messages, Notifications, Profile) */
+    .top-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 20px;
+    }
+    .story-container {
+        width: 100vw;
+        /* max-width: 400px; */
+        overflow: hidden;
+        margin: 57px auto 18px;
+        padding: 0; /* Removes unwanted extra space */
+    }
+
+    .stories {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+
+    .stories::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Webkit browsers */
+    }
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+        z-index: 1000;
+        height: 48px;
+    }
+
+    .bottom-nav i {
+        font-size: 22px;
+        color: white;
+    }
+
+    .bottom-nav i:hover {
+        color: gray;
+    }
+    .profile img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-top: 19px;
+    }
+    .explore-container{
+        margin-left: 0;
+        margin-top: 71px;
+    }
+    
+
+}
+@media (max-width: 480px){
+    .explore-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 150px);
+    }
+}
+@media (max-width: 425px) {
+    /* Prevent horizontal scrolling */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Hide the sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Top Navigation Bar (Fixed like Instagram) */
+    .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        padding: 10px 16px;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9); /* Dark Transparent */
+        z-index: 1000;
+        border-bottom: 1px solid #333;
+    }
+
+    /* Centering Instagram Logo */
+    .nav-top .logo img {
+        width: 110px;
+        height: 32px;
+    }
+
+    /* Right-side top icons (Messages, Notifications, Profile) */
+    .top-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    /* Stories Section */
+    .story-container {
+        width: 100vw;
+        max-width: 400px;
+        overflow: hidden;
+        margin: 57px auto 18px;
+        padding: 0; /* Removes unwanted extra space */
+    }
+
+    .stories {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+
+    .stories::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Webkit browsers */
+    }
+
+    /* Feed / Posts Layout */
+    .instagram-post {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        border-bottom: 1px solid #333;
+    }
+
+    /* Ensuring post image fills the container */
+    .post-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    /* Remove extra margins/padding that might cause horizontal scrolling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Fixing unwanted horizontal scrolling */
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+        z-index: 1000;
+        height: 48px;
+    }
+
+    .bottom-nav i {
+        font-size: 22px;
+        color: white;
+    }
+
+    .bottom-nav i:hover {
+        color: gray;
+    }
+    .profile img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-top: 19px;
+    }
+    .msg-profile{
+        align-items: center;
+        padding: 12px;
+    }
+    .msg-list{
+        align-items: center;
+    }
+}
+@media (max-width: 415px){
+    .instagram-post{
+        padding: 10px;
+    }
+}
+

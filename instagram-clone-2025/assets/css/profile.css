@@ -1,0 +1,116 @@
+body{
+    overflow-x: visible;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 50px;
+    position: relative;
+    
+  }
+  .tabs::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 1px;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .tab {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: black;
+    position: relative;
+    margin-right: 50px;
+    /* text-align: center; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    color: #a8a8a8;
+    
+  }
+  .tab::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    top: -10px;
+    left: 0px;
+    width: 0px;
+    /* transition: 0.3s ease-in-out; */
+
+  }
+
+  .tab.active::before {
+   width: 100%;
+   
+  }
+  .tab.active{
+    color: #fff;
+  }
+
+  .tab-content {
+    background: black;
+    padding: 0 20px;
+    /* border: 1px solid #ccc; */
+    
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+  .bi-grid-3x3{
+    margin-right: 5px;
+  }
+  .tabs img{
+    height: 15px;
+    margin-right: 5px;
+  }
+  .bi-bookmark{
+    margin-right: 5px;
+  }
+  .bi-person-square{
+    margin-right: 5px;
+  }
+
+  .insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    margin-top: 20px;
+    width: 940px;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    height: 410px;
+  }
+  
+  .grid-item img,
+  .grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .post-type {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  

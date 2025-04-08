@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/instagram-com/icon-big.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="nav-top">
+      <div class="logo">
+        <img src="/assets/images/instagram-com/logo.png" alt="" />
+      </div>
+      <div class="top-icons">
+        <div class="create">
+          <img src="/assets/images/instagram-com/svgexport-18.png" alt="" />
+        </div>
+        <div class="notifications">
+          <img src="/assets/images/instagram-com/svgexport-17.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <div class="home">
+        <a href="index.html">
+        <img src="/assets/images/instagram-com/svgexport-12.png" alt="" />
+      </a>
+      </div>
+      <div class="search">
+        <img src="/assets/images/instagram-com/svgexport-13.png" alt="" />
+      </div>
+      <div class="reels">
+        <img src="/assets/images/instagram-com/svgexport-15.png" alt="" />
+      </div>
+      <div class="messages">
+        <a href="message.html">
+        <img src="/assets/images/instagram-com/svgexport-16.png" alt="" />
+      </a>
+      </div>
+      <div class="profile">
+        <a href="profile.html">
+        <img
+          src="/assets/images/instagram-com/story1 (3).jpg"
+          alt=""
+          class="round"
+        />
+      </a>
+      </div>
+    </div>
+    <nav class="sidebar">
+      <h2 class="logo-1">
+       <a href="index.html"> <img src="/assets/images/instagram-com/logo.png" alt="" /></a>
+      </h2>
+      <h2 class="logo-2">
+        <img src="/assets/images/instagram-com/logo2.png" alt="" />
+      </h2>
+      <div class="side-list">
+        <ul class="list-1">
+          <li id="my-feeds">
+            <a href="index.html">
+            <img
+              src="/assets/images/instagram-com/svgexport-12.png"
+              alt=""
+            /><span class="titles home">Home</span>
+          </a>
+          </li>
+          <li id="search">
+            <img
+              src="/assets/images/instagram-com/svgexport-13.png"
+              alt=""
+            /><span class="titles search">Search</span>
+          </li>
+          <li id="explore">
+            <a href="explore.html">
+            <img
+              src="/assets/images/instagram-com/svgexport-14.png"
+              alt="" 
+            /><span class="titles explore">Explore</span>
+          </a>
+          </li>
+          <li id="reels">
+            <img
+              src="/assets/images/instagram-com/svgexport-15.png"
+              alt=""
+            /><span class="titles reels">Reels</span>
+          </li>
+         
+          <li id="message">
+            <a href="message.html">
+            <img
+              src="/assets/images/instagram-com/svgexport-16.png"
+              alt=""
+            /><span class="titles message">Message</span>
+            </a>
+          </li>
+          <li id="create">
+            <img
+              src="/assets/images/instagram-com/svgexport-18.png"
+              alt=""
+            /><span class="titles create">Create</span>
+          </li>
+          
+          <li>
+            <img
+              src="/assets/images/instagram-com/svgexport-17.png"
+              alt=""
+            /><span class="titles Notifications">Notifications</span>
+          </li>
+
+          <li>
+            <a href="/profile.html">
+            <img
+              src="/assets/images/instagram-com/story1 (3).jpg"
+              alt=""
+              class="round"
+            /><span class="titles">Profile</span>
+          </a>
+          </li>
+        </ul>
+        <ul class="list-2">
+          <li>
+            <img
+              src="/assets/images/instagram-com/svgexport-19.png"
+              alt=""
+            /><span class="titles">AI</span>
+          </li>
+
+          <li>
+            <img
+              src="/assets/images/instagram-com/svgexport-20.png"
+              alt=""
+            /><span class="titles">Threads</span>
+          </li>
+          <li>
+            <img
+              src="/assets/images/instagram-com/svgexport-21.png"
+              alt=""
+            /><span class="titles">More</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div id="popup" class="popup">
+      <h2>Create New post</h2>
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <img src="/assets/images/instagram-com/createic.png" class="create-img" alt="">
+        <p>Drag Photos and videos here</p>
+        <button id="select-from">Select from computer</button>
+      </div>
+    </div> -->
+
+    <div id="popup" class="popup">
+      <h2>Create New Post</h2>
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <img src="/assets/images/instagram-com/createic.png" class="create-img" alt="">
+        <p>Drag Photos and Videos Here</p>
+        <input type="file" id="fileInput" accept="image/*,video/*" style="display: none;">
+        <button id="select-from">Select from Computer</button>
+    
+        <!-- Hidden elements (appear after file selection) -->
+        <div id="postDetails" style="display: none;">
+          <textarea id="caption" placeholder="Write a caption..."></textarea>
+          <button id="postButton">Post</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- search button -->
+    <div class="custom-search-menu">
+        <div class="things">
+        <h1 class="s-head">Search</h1>
+        <input type="text" placeholder="Search...">
+        <button id="custom-close-search">✖</button>
+    </div>
+    </div>
+    <div class="container">
+      <div class="posts">
+        <div class="story-container">
+          <button class="prev">‹</button>
+          <div class="stories">
+            <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (1).jpg" alt="" />
+            </div>
+            <p class="story-name">Tonny-stark</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (2).jpg" alt="" />
+            </div>
+            <p class="story-name">Thor</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (3).jpg" alt="" />
+            </div>
+            <p class="story-name">Dr-strange</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (4).jpg" alt="" />
+            </div>
+            <p class="story-name">Clark kent</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (5).jpg" alt="" />
+            </div>
+            <p class="story-name">Bruce_wayne</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (6).jpg" alt="" />
+            </div>
+            <p class="story-name">Captain America</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (7).jpg" alt="" />
+            </div>
+            <p class="story-name">Iron_man</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (8).jpg" alt="" />
+            </div>
+            <p class="story-name">Peter parker</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (9).jpg" alt="" />
+            </div>
+            <p class="story-name">The Hulk</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (3).jpg" alt="" />
+            </div>
+            <p class="story-name">Dark Side</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (7).jpg" alt="" />
+            </div>
+            <p class="story-name">Tonny-stark</p>
+        </div>
+        <div class="full-story">
+            <div class="story">
+              <img src="/assets/images/instagram-com/story1 (5).jpg" alt="" />
+            </div>
+            <p class="story-name">Tonny-stark</p>
+        </div>
+          
+          </div>
+          <button class="next">›</button>
+        </div>
+
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (7).jpg" alt="" />
+            </div>
+            <p class="username">
+              currentpakistan.pk
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <video src="/assets/images/instagram-com/253998_small.mp4" autoplay loop muted></video>
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (5).jpg" alt="" />
+            </div>
+            <p class="username">
+              Rabiya_karamat
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <img src="/assets/images/instagram-com/story1 (10).jpg" alt="" />
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (9).jpg" alt="" />
+            </div>
+            <p class="username">
+              Adil Zaib
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <img src="/assets/images/instagram-com/story1 (12).jpg" alt="" />
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (8).jpg" alt="" />
+            </div>
+            <p class="username">
+              Troll_gram
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <img src="/assets/images/instagram-com/post1.heic" alt="" />
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (7).jpg" alt="" />
+            </div>
+            <p class="username">
+              currentpakistan.pk
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <img src="/assets/images/instagram-com/story1 (11).jpg" alt="" />
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+        <div class="instagram-post">
+          <div class="post-header">
+            <div class="profile-pic">
+              <img src="/assets/images/instagram-com/story1 (7).jpg" alt="" />
+            </div>
+            <p class="username">
+              currentpakistan.pk
+              <span class="sub-p"> <i class="bi bi-dot"></i> 10m</span>
+            </p>
+            <span class="time"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                /></svg
+            ></span>
+          </div>
+          <div class="post-image">
+            <img src="/assets/images/instagram-com/story1 (11).jpg" alt="" />
+          </div>
+          <div class="post-icons">
+            <div class="post-icon-right">
+              <i class="bi bi-heart-fill like-button"></i>
+              <i class="bi bi-chat"></i>
+              <i class="bi bi-share"></i>
+            </div>
+            <div class="post-icon-left">
+              <i class="bi bi-box-arrow-down"></i>
+            </div>
+          </div>
+          <span>5,523 likes</span>
+          <div class="post-content">
+            <p>
+              <strong>elfcosmetics</strong> - The Masjid al-Nabawi was first
+              built by Prophet Muhammad in the first year of the Hijrah (around
+              622 CE)...
+            </p>
+          </div>
+          <div class="input-container">
+            <i class="bi bi-emoji-smile"></i>
+            <input type="text" id="postInput" placeholder="Add a comment..." />
+            <a href="#" id="postLink" class="hidden">Post</a>
+          </div>
+        </div>
+      </div>
+     
+
+    
+
+
+
+
+      <div class="sidebar2">
+        <div class="profile">
+          <img
+            src="/assets/images/instagram-com/story1 (3).jpg"
+            alt="Profile Picture"
+          />
+          <div class="profile-info">
+            <p class="username">mehroz_ahmmed</p>
+            <p class="name">Mehroz</p>
+          </div>
+          <a href="#" class="switch">Switch</a>
+        </div>
+
+        <div class="suggestions">
+          <div class="suggestions-header">
+            <p>Suggested for you</p>
+            <a href="#">See All</a>
+          </div>
+
+          <div class="suggested-user">
+            <img src="/assets/images/instagram-com/aside (1).jpg" alt="User" />
+            <div class="user-info">
+              <p class="username">durefishans <i class="verified"></i></p>
+              <p class="mutual">Followed by firdous418 + 29 more</p>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+
+          <div class="suggested-user">
+            <img src="/assets/images/instagram-com/aside (2).jpg" alt="User" />
+            <div class="user-info">
+              <p class="username">merium.pervaiz <i class="verified"></i></p>
+              <p class="mutual">Followed by maryal_princes_07</p>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+
+          <div class="suggested-user">
+            <img src="/assets/images/instagram-com/aside (3).jpg" alt="User" />
+            <div class="user-info">
+              <p class="username">chtayyab4220</p>
+              <p class="mutual">Followed by hafsa_chaudhryy</p>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+
+          <div class="suggested-user">
+            <img src="/assets/images/instagram-com/aside (4).jpg" alt="User" />
+            <div class="user-info">
+              <p class="username">arydigital.tv <i class="verified"></i></p>
+              <p class="mutual">Followed by maryal_princes_07</p>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+
+          <div class="suggested-user">
+            <img src="/assets/images/instagram-com/aside (5).jpg" alt="User" />
+            <div class="user-info">
+              <p class="username">maria_tehseen4134</p>
+              <p class="mutual">Followed by amna_ch169 + 3 more</p>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>
+            About • Help • Press • API • Jobs • Privacy • Terms • Locations •
+            Language • Meta Verified
+          </p>
+          <p>© 2025 INSTAGRAM FROM META</p>
+        </div>
+      </div>
+
+<!-- div here -->
+
+    </div>
+
+<!-- <div class="search-section">
+    <div class="search-top">
+    <h1 class="heading">Search</h1>
+    <input type="text" id="input-search" placeholder="Search">
+    </div> -->
+
+
+</div>
+
+
+
+
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
